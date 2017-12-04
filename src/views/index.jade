@@ -5,23 +5,25 @@ block content
   app
   script(src='./scripts/tags.js')
   script.
-    riot.route('/members/*', function(tagName) {
+    riot.route('/member/*', function(tagName) {
       console.log(tagName);
-      // APIからとってくる
+      // APIからとってくる。もしくはプリロードしてマウント終了後に全部差し込む。
       var content = {
         name: 'kooh',
         intro: 'Artist',
       }
-      riot.mount('content', 'page-members', {content: content});
+      riot.mount('content', 'page-member', {content: content});
       riot.update();
     })
+
     riot.route(function(tagName) {
       console.log(tagName);
-      tagName = tagName || 'home';
+      tagName = tagName || 'page-top';
       //debugger
       riot.mount('content', tagName, {content: 'content'});
       riot.update();
     });
+
     riot.route.start(true);
     
     var tags = riot.mount('app');

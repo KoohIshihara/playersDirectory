@@ -1,0 +1,14 @@
+page-member
+  h2 {opts.content.name}
+  p {opts.content.intro}
+  p member
+
+  style(scoped, type='less').
+    :scope {
+      h2 {
+        color: #F00;
+      }
+    }
+
+  script.
+    console.log(opts);
