@@ -1,2 +1,2 @@
-# playersDirectory
-選手名鑑
+# refine
+LP of Refine
