@@ -1,0 +1,32 @@
+item-sns-icons
+  div.wrap-item.f.flex-around.flex-middle
+    atom-snsicon(each='{item in icons}',content='{item}')
+    
+  style(scoped, type='less').
+    :scope {
+      display: block;
+      width: 100%;
+      .wrap-item {
+        width: 180px;
+        height: 40px;
+        color: #F00;
+        margin: 0 auto;
+      }
+    }
+
+  script.
+    
+    this.icons = [
+      {
+        href: 'https://www.facebook.com/kou.ishihara.37',
+        img: './img/fb.svg',
+      },
+      {
+        href: 'https://www.facebook.com/kou.ishihara.37',
+        img: './img/twitter.svg',
+      },
+      {
+        href: 'https://www.facebook.com/kou.ishihara.37',
+        img: './img/insta.svg',
+      },
+    ]

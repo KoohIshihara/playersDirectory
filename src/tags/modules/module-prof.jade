@@ -1,16 +1,16 @@
 module-prof
-  a(href='#member/kooh').wrap
+  a(href='#member/kooh').wrap-module
     div.wrap-img.f.fh
-      img(src='./img/kooh.jpg').my40
+      img(src='{ opts.content.img }').my40
     div.wrap-name
-      span.name 石原航
-      span.name-en.mt20 Kooh Ishihara
+      span.name { opts.content.name }
+      span.name-en.mt20 { opts.content.name_en }
 
   style(scoped, type='less').
     :scope {
       display: block;
       width: 100%;
-      .wrap {
+      .wrap-module {
         display: block;
         .wrap-img {
           width: 100%;
@@ -38,9 +38,6 @@ module-prof
             color: #999;
           }
         }
-      }
-      @media only screen and (max-width : 600px) {
-
       }
     }
 

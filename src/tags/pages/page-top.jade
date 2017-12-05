@@ -1,15 +1,14 @@
 page-top
-  div.wrap.row.flex-around
-    div.prof(each='{profs}').mb50
-      module-prof
+  div.wrap-page.row.flex-around
+    div(each='{item in profs}').prof.mb50
+      module-prof(content='{item}')
       item-tags.mt40
-
 
   style(scoped, type='less').
     :scope {
       display: block;
       width: 100%;
-      .wrap {
+      .wrap-page {
         width: 90%;
         max-width: 1080px;
         margin: 0 auto;
@@ -34,25 +33,31 @@ page-top
       {
         name: '石原航',
         name_en: 'Ko Ishihara',
+        img: './img/kooh.jpg',
       },
       {
         name: '石原航',
         name_en: 'Ko Ishihara',
+        img: './img/kooh.jpg',
       },
       {
         name: '石原航',
         name_en: 'Ko Ishihara',
+        img: './img/kooh.jpg',
       },
       {
         name: '石原航',
         name_en: 'Ko Ishihara',
+        img: './img/kooh.jpg',
       },
       {
         name: '石原航',
         name_en: 'Ko Ishihara',
+        img: './img/kooh.jpg',
       },
       {
         name: '石原航',
         name_en: 'Ko Ishihara',
+        img: './img/kooh.jpg',
       },
     ];
