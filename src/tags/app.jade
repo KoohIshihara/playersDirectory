@@ -1,13 +1,24 @@
 app
-  //a(href="#page-test") testlink
-  //br
-  //a(href="#member/kooh") menbers link
   module-header
   content
+  module-footer
 
   style(scoped, type='less').
     :scope {
-      
+      content {
+        margin-top: 24px;
+      }
+      module-footer {
+        margin-top: 64px;
+      }
+      @media only screen and (max-width : 600px) {
+        content {
+          margin-top: 0px;
+        }
+        module-footer {
+          margin-top: 32px;
+        }
+      }
     }
 
   script.

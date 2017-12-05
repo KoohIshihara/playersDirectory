@@ -1,26 +1,29 @@
+/*
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+*/
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
 
 h1 {
-  font-family: 'Noto Sans', 'Noto Sans JP', helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+  font-family: Noto Sans Japanese, Noto Sans JP , helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
 }
 
 h2 {
-  font-family: 'Noto Sans', 'Noto Sans JP', helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+  font-family: Noto Sans Japanese, Noto Sans JP , helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
 }
 
 h3 {
-  font-family: 'Noto Sans', 'Noto Sans JP', helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+  font-family: Noto Sans Japanese, Noto Sans JP , helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
 }
 
 p {
-  font-family: 'Noto Sans', 'Noto Sans JP', helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+  font-family: Noto Sans Japanese, Noto Sans JP , helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
 }
 
 span {
-  font-family: 'Noto Sans', 'Noto Sans JP', helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+  font-family: Noto Sans Japanese, Noto Sans JP , helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
 }
 
 li {
-  font-family: 'Noto Sans', 'Noto Sans JP', helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+  font-family: Noto Sans Japanese, Noto Sans JP , helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
 }

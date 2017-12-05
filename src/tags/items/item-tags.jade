@@ -1,0 +1,30 @@
+item-tags
+  div.wrap-tags.row.fc
+    atom-tag(each='{tags}', label='{label}')
+    
+  style(scoped, type='less').
+    :scope {
+      display: inline-block;
+      .wrap-tags {
+        .tag {
+          display: inline-block;
+          background: #2a2a2a;
+          border-radius: 20px;
+          span {
+            color: #FFF;
+            text-align: center;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+  script.
+
+    this.tags = [
+      {label: 'graphic design'},
+      {label: 'speculative design'},
+      {label: 'programing'},
+      {label: 'art'},
+      {label: 'computer graphics'},
+    ];

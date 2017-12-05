@@ -1,6 +1,8 @@
 page-top
-  div.wrap
-    module-prof
+  div.wrap.row.flex-around
+    div.prof(each='{profs}').mb50
+      module-prof
+      item-tags.mt40
 
 
   style(scoped, type='less').
@@ -11,9 +13,46 @@ page-top
         width: 90%;
         max-width: 1080px;
         margin: 0 auto;
+        .prof {
+          width: 40%;
+        }
+      }
+      @media only screen and (max-width : 600px) {
+        .wrap {
+          .prof {
+            width: 100%;
+          }
+        }
       }
     }
 
   script.
 
     var self = this;
+
+    this.profs = [
+      {
+        name: '石原航',
+        name_en: 'Ko Ishihara',
+      },
+      {
+        name: '石原航',
+        name_en: 'Ko Ishihara',
+      },
+      {
+        name: '石原航',
+        name_en: 'Ko Ishihara',
+      },
+      {
+        name: '石原航',
+        name_en: 'Ko Ishihara',
+      },
+      {
+        name: '石原航',
+        name_en: 'Ko Ishihara',
+      },
+      {
+        name: '石原航',
+        name_en: 'Ko Ishihara',
+      },
+    ];
