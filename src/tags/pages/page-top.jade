@@ -17,7 +17,7 @@ page-top
         }
       }
       @media only screen and (max-width : 600px) {
-        .wrap {
+        .wrap-page {
           .prof {
             width: 100%;
           }
@@ -61,3 +61,17 @@ page-top
         img: './img/kooh.jpg',
       },
     ];
+    
+    // ページ遷移時にページ上部へ
+    this.on('updated', function(){
+      $('a').click(function() {
+        $('body, html').animate({ scrollTop:0 }, 0);
+      });
+      //$('app').removeClass('addAlpha');
+      setTimeout(function() {
+        $('app').addClass('not-opacity');
+      }, 300);
+    });
+
+    
+

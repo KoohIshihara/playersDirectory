@@ -1,0 +1,27 @@
+atom-li-via
+  div.wrap-atom.f
+    p.pl32 { opts.item }
+    
+  style(scoped, type='less').
+    :scope {
+      display: block;
+      width: 100%;
+      position: relative;
+      .wrap-atom {
+        display: block;
+        height: 40px;
+        border-left: 3px #e5e5d1 solid;
+        padding-bottom: 100px;
+      }
+      .wrap-atom:before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border: solid 0.6px #2a2a2a;
+        position: absolute;
+        left: -6px;
+        top: 8px;
+        border-radius: 100%;
+      }
+    }

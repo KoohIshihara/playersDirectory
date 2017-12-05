@@ -18,6 +18,7 @@ h3 {
 
 p {
   font-family: Noto Sans Japanese, Noto Sans JP , helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+  font-size: 16px;
 }
 
 span {
@@ -27,3 +28,28 @@ span {
 li {
   font-family: Noto Sans Japanese, Noto Sans JP , helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
 }
+
+a {
+  font-family: Noto Sans Japanese, Noto Sans JP , helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+}
+
+.addAlpha {
+  opacity: 0.0;
+}
+
+.not-opacity {
+  opacity: 1!important;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-delay: 0s;
+  transition-timing-function: ease;
+}
+
+@media only screen and (max-width : 600px) {
+  p {
+    font-family: Noto Sans Japanese, Noto Sans JP , helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+    font-size: 14px;
+  }
+}
+
+

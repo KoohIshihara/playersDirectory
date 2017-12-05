@@ -6,7 +6,9 @@ block content
   script(src='./scripts/tags.js')
   script.
     riot.route('/member/*', function(tagName) {
-      console.log(tagName);
+      //console.log(tagName);
+      //$('app').addClass('addAlpha');
+      $('app').removeClass('not-opacity');
       // APIからとってくる。もしくはプリロードしてマウント終了後に全部差し込む。
       var content = {
         name: 'kooh',
@@ -17,9 +19,10 @@ block content
     })
 
     riot.route(function(tagName) {
-      console.log(tagName);
+      //console.log(tagName);
+      //$('app').addClass('addAlpha');
+      $('app').removeClass('not-opacity');
       tagName = tagName || 'page-top';
-      //debugger
       riot.mount('content', tagName, {content: 'content'});
       riot.update();
     });

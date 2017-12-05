@@ -1,9 +1,13 @@
 page-member
-  div.wrap-page.f.fc
-    div.prof.mb50
-      module-prof(content='{prof}')
-      item-sns-icons.mt32
-      item-tags.mt32
+  div.wrap-page
+    div.wrap-prof.mb60.f.fc
+      div.prof
+        module-prof(content='{prof}')
+        item-sns-icons.mt32
+        item-tags.mt32
+    module-intro-text.mb60
+    module-via.mb60
+    module-contact.mb60
 
   style(scoped, type='less').
     :scope {
@@ -13,24 +17,37 @@ page-member
         width: 90%;
         max-width: 1080px;
         margin: 0 auto;
-        .prof {
-          width: 40%;
+        .wrap-prof {
+          .prof {
+            width: 40%;
+          }
         }
       }
       @media only screen and (max-width : 600px) {
         .wrap-page {
-          .prof {
-            width: 100%;
+          .wrap-prof {
+            .prof {
+              width: 100%;
+            }
           }
         }
       }
     }
 
   script.
-    console.log(opts);
 
     this.prof = {
       name: '石原航',
       name_en: 'Ko Ishihara',
       img: './img/kooh.jpg',
     }
+
+    this.on('updated', function(){
+      $('.toTop').click(function() {
+        $('body, html').animate({ scrollTop:0 }, 0);
+      });
+      setTimeout(function() {
+        $('app').addClass('not-opacity');
+      }, 300);
+    });
+
